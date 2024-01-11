@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 1920px;
+    height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    float: block;
+}
+
+.imgcontainer {
+    width: 800px;
+    height: 900px;
+    float: left;
+}
+
+.centercontainer {
+    width: 320px;
+    height: 450px;
+    text-align: center;
+    padding-top: 100px;
+    float: left;
+    margin: 0px;
+}
+
+.left img {
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.right img {
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+

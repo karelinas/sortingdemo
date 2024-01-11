@@ -1,0 +1,38 @@
+<html>
+<style>
+body {
+    text-align: center;
+    font-size: 2em;
+    background-color: black;
+    color: white;
+}
+img {
+    max-height: 400px;
+    max-width: 700px;
+    display: block;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.top3 {
+    max-height:600px;
+    max-width:1200px;
+}
+</style>
+<body>
+    <h1>{{comparison_count}} comparisons for {{images|length}} items</h1>
+    <a href="reset">start over</a><br/><br/><br/>
+    {% for img in images %}
+    #{{ loop.index0 + 1 }}
+    <br/>
+    <a href="static/images/{{ img }}">
+        {% if loop.index0 < 3 %}
+            <img class="top3" src="static/images/{{ img }}">
+        {% else %}
+            <img src="static/images/{{ img }}">
+        {% endif %}
+    </a>
+    {% endfor %}
+</body>
+</html>
+
